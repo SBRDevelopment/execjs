@@ -28,7 +28,7 @@ module ExecJS
         begin
           extract_result(@runtime.exec_runtime(tmpfile.path))
         ensure
-          File.unlink(tmpfile)
+          #File.unlink(tmpfile)
         end
       end
 
